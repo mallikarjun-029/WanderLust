@@ -1,0 +1,290 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* footer */
+.container{
+    flex:1;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #222222!important;
+}
+
+.navbar {
+    background-color: white;
+    height:5rem;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size:2rem;
+}
+
+.f-info-socials, .f-info-brand{
+    width:100%;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info{
+    border-top:1px solid black;
+    height:8rem;
+    background-color: #f0e9e9;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+     vertical-align: middle;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+/* listing-img */
+.listing-card{
+    border:none !important;
+    margin-bottom:2rem;
+} 
+
+.card-img-top{
+    border-radius:1rem !important;
+    width:100%;
+    object-fit:cover !important;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.card-text-p{
+    font-weight:400;
+}
+
+/* Card effect */
+.card-img-overlay{
+   opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New page */
+.add-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+
+/* Edit button */
+
+.edit-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+
+/* show image */
+.show-img{
+    height:30vh;
+}
+
+.show-btns{
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    gap:1rem;
+    align-items: center;
+}
+
+.show-btns form {
+    margin: 0;
+}
+
+.del-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+
+/* Navbar */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Filter Bar */
+.filter {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 1rem;
+    padding: 0.5rem 0;
+
+    scrollbar-width: none;      
+    -ms-overflow-style: none;    
+}
+
+.filter::-webkit-scrollbar {
+    display: none;
+}
+
+.filters {
+    flex: 0 0 auto;
+    text-align: center;
+    opacity: 0.75;
+    font-size: 1rem;
+    min-width: 70px;
+    transition: opacity 0.2s ease;
+}
+
+.filters:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filters p {
+    margin: 0.2rem 0 0;
+    font-size: 0.85rem;
+}
+
+.filters i {
+    font-size: 1.3rem;
+}
+
+
+/* filter toggler */
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filters {
+    text-align: center;
+    margin-right: 1rem;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .filters:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .filters a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .filters a:visited {
+    color: black;
+  }
+
+  #tax-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+  }
+
+
+/* Cards */
+.card-img-top {
+    height: 20rem;
+    object-fit: cover;
+}
+
+
+@media (max-width: 600px) {
+
+    .col {
+        padding: 0.4rem;
+    }
+
+    .listing-card {
+        transform: scale(0.95);
+    }
+
+    .card-img-top {
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 0.6rem;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* preview image */
+
+
+.preview-img {
+    max-width: 250px;
+    width: 12%;
+    height: 5%;
+    border-radius: 8px;
+    filter: blur(0.2px);
+    opacity: 0.8;
+    object-fit: cover;
+    margin-left: 0px;
+}
+
+/* navbar search */
+
+ .search-bar {
+    border-radius: 25rem;
+    border:2px solid #fe424d;
+    padding:0 2rem 0 2rem;
+}
+
+.search-btn{
+    background-color: #fe424d;
+    color:white;
+    border-radius: 2rem;
+    padding:0 0.5 rem 0 0.5rem;
+} 
+
+.search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-btn:hover{
+    background-color: white !important;
+    color:black;
+}
