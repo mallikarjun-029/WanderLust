@@ -1,5 +1,5 @@
 const Listing = require("../models/listing.js");
-const Riview = require("../models/reviews.js");
+const Review = require("../models/reviews.js");
 const validId = require("../utils/wrapAsync.js");
 const mongoose = require("mongoose");
 

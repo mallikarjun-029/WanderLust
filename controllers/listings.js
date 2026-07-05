@@ -68,7 +68,6 @@ module.exports.renderEditListing = async (req, res) => {
     let { id } = req.params;
 
     const listing = await Listing.findById(id);
-    console.log(listing);
 
     if (!listing) {
         req.flash("error", "Listing does not Exist");

@@ -86,6 +86,7 @@ main()
 
 
 async function main() {
+    console.log("Database URL loaded:", !!process.env.ATLASDB_URL); 
     await mongoose.connect(dbUrl);
 }
 

@@ -1,26 +1,39 @@
+const path = require("path");
+
+require("dotenv").config({
+    path: path.join(__dirname, "../.env")
+});
+
 const mongoose = require("mongoose");
 const initData = require("./data.js");
 const Listing = require("../models/listing.js");
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/WanderLust";
+const dbUrl = process.env.ATLASDB_URL;
 
 main()
-    .then(() => {
-        console.log("connected to  mongoose");
+    .then(async () => {
+        console.log("connected to mongoose");
+        await initDB();
+        mongoose.connection.close();
     })
     .catch(err => console.log(err));
 
-
 async function main() {
-    await mongoose.connect(MONGO_URL);
+    await mongoose.connect(dbUrl);
 }
 
 const initDB = async () => {
     await Listing.deleteMany({});
-    initData.data = initData.data.map((obj) => ({ ...obj , owner : "6a3dd93403858e15a68f1d86"}));
+
+    initData.data = initData.data.map((obj) => ({
+        ...obj,
+        owner: "6a4a9ccab5e3d84b29dcf0cc"
+    }));
+
     await Listing.insertMany(initData.data);
+
+    const count = await Listing.countDocuments();
+    console.log("Total Listings:", count);
+
     console.log("data was initialized");
-}
-
-initDB();
-
+};
