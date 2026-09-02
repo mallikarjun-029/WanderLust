@@ -4,8 +4,9 @@ WanderLust is a full-stack web application for discovering and listing
 places to stay. Users can browse available listings, view details,
 create their own listings, and manage them through a simple interface.
 
-The project was built to practice full-stack web development using
-Node.js, Express, MongoDB, EJS, and other web technologies.
+The project is build using MERN stack.
+CHECK OUT THE PROJECT:
+VISIT : https://wanderlust-k0pf.onrender.com
 
 
 ## Features
