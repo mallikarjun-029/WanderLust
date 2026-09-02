@@ -5,6 +5,7 @@ places to stay. Users can browse available listings, view details,
 create their own listings, and manage them through a simple interface.
 
 The project was built using Node.js, Express.js, MongoDB, EJS, and Bootstrap.
+
 CHECK OUT THE PROJECT:
 VISIT : https://wanderlust-k0pf.onrender.com
 
